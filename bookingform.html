@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- Booking Form -->
+    <div id="booking-form" class="booking-form" style="display: none;">
+        <h2>Booking Form</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="package-select">Select Package:</label>
+            <select id="package-select" name="package-name" required>
+                <option value="Exotic Wilderness Retreat">Exotic Wilderness Retreat</option>
+                <option value="Cultural Odyssey">Cultural Odyssey</option>
+                <option value="Tropical Paradise Getaway">Tropical Paradise Getaway</option>
+                <option value="City Explorer">City Explorer</option>
+                <option value="Mountain Trekking Adventure">Mountain Trekking Adventure</option>
+                <option value="Desert Safari Expedition">Desert Safari Expedition</option>
+                <option value="Island Hopping Escapade">Island Hopping Escapade</option>
+                <option value="Jungle Safari Experience">Jungle Safari Experience</option>
+                <option value="Skiing Adventure">Skiing Adventure</option>
+                <option value="Historical Heritage Tour">Historical Heritage Tour</option>
+            </select>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit" class="btn">Submit Booking</button>
+            <button type="button" class="btn" onclick="closeBookingForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

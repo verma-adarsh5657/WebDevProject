@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Seekers Tours & Travels - More Packages</title>
+    <link rel="stylesheet" href="package.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Adventure Seekers</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="features.html">Unique Features</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Package Cards -->
+    <section class="packages">
+        <h2>Featured Packages</h2>
+        <!-- Initial packages -->
+        <div class="package-card">
+            <h3>Exotic Wilderness Retreat</h3>
+            <p>Explore untouched landscapes and encounter rare wildlife in this unforgettable adventure.</p>
+            <p>Price: $2000</p>
+            <button class="book-btn" onclick="openBookingForm('Exotic Wilderness Retreat')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Cultural Odyssey</h3>
+            <p>Immerse yourself in the rich tapestry of cultures as you journey through historic landmarks and vibrant cities.</p>
+            <p>Price: $2500</p>
+            <button class="book-btn" onclick="openBookingForm('Cultural Odyssey')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Tropical Paradise Getaway</h3>
+            <p>Relax on sun-kissed beaches, snorkel in crystal-clear waters, and indulge in island luxury.</p>
+            <p>Price: $1800</p>
+            <button class="book-btn" onclick="openBookingForm('Tropical Paradise Getaway')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>City Explorer</h3>
+            <p>Experience the hustle and bustle of metropolitan life, from iconic landmarks to hidden gems.</p>
+            <p>Price: $1500</p>
+            <button class="book-btn" onclick="openBookingForm('City Explorer')">Book Now</button>
+        </div>
+        <!-- End of initial packages -->
+
+        <!-- Additional packages -->
+        <div class="package-card">
+            <h3>Mountain Trekking Adventure</h3>
+            <p>Embark on a thrilling journey through rugged mountain trails, surrounded by breathtaking vistas.</p>
+            <p>Price: $2200</p>
+            <button class="book-btn" onclick="openBookingForm('Mountain Trekking Adventure')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Desert Safari Expedition</h3>
+            <p>Discover the mystique of the desert as you ride camels and camp under starlit skies.</p>
+            <p>Price: $1700</p>
+            <button class="book-btn" onclick="openBookingForm('Desert Safari Expedition')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Island Hopping Escapade</h3>
+            <p>Hop from one paradise island to another, exploring hidden coves and pristine beaches.</p>
+            <p>Price: $1900</p>
+            <button class="book-btn" onclick="openBookingForm('Island Hopping Escapade')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Jungle Safari Experience</h3>
+            <p>Get up close and personal with exotic wildlife as you navigate through lush jungle terrain.</p>
+            <p>Price: $2100</p>
+            <button class="book-btn" onclick="openBookingForm('Jungle Safari Experience')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Skiing Adventure</h3>
+            <p>Hit the slopes and experience the adrenaline rush of skiing in snowy mountain resorts.</p>
+            <p>Price: $2400</p>
+            <button class="book-btn" onclick="openBookingForm('Skiing Adventure')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Historical Heritage Tour</h3>
+            <p>Step back in time and explore ancient ruins, monuments, and architectural wonders.</p>
+            <p>Price: $1800</p>
+            <button class="book-btn" onclick="openBookingForm('Historical Heritage Tour')">Book Now</button>
+        </div>
+        <!-- End of additional packages -->
+    </section>
+
+    <!-- Booking Form -->
+    <div id="booking-form" class="booking-form">
+        <h2>Booking Form</h2>
+        <form action="submit_booking.php" method="POST">
+            <input type="hidden" id="package-name" name="package-name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Contact us: info@adventureseekers.com</p>
+            <p>Follow us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

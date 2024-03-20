@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Seekers Tours & Travels</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Adventure Seekers</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="features.html">Unique Features</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page Content -->
+    <section class="hero">
+        <h1>Welcome to Adventure Seekers Tours & Travels</h1>
+        <p>Your gateway to thrilling adventures around the globe! Embark on journeys that ignite your spirit of exploration, from the serene landscapes of untouched wilderness to the bustling streets of exotic cities. Dive into the depths of vibrant cultures, savor the flavors of diverse cuisines, and create unforgettable memories that will last a lifetime. Let us guide you through a world of excitement and discovery, where every destination holds the promise of extraordinary experiences.</p>
+
+
+        <a href="services.html" class="btn">Explore Our Services</a>
+        <a href="getstarted.html" class="btn">Get Started</a>
+    </section>
+
+   <!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+        <p>"Amazing experience! Highly recommended!"</p>
+        <cite>- John Doe</cite>
+    </div>
+    <div class="testimonial">
+        <p>"Unforgettable journey! Can't wait to book my next adventure!"</p>
+        <cite>- Jane Smith</cite>
+    </div>
+    <div class="testimonial">
+        <p>"Adventure Seekers made my dream vacation a reality. Thank you!"</p>
+        <cite>- David Johnson</cite>
+    </div>
+    <button id="view-more-btn" class="btn">View More Reviews</button>
+</section>
+
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Adventure Seekers, our mission is to provide unforgettable experiences that inspire and connect people to the world's most captivating destinations.</p>
+    </section>
+
+    <section id="packages" class="packages">
+        <h2>Featured Packages</h2>
+        <div class="package-card">
+            <h3>Exotic Wilderness Retreat</h3>
+            <p>Explore untouched landscapes and encounter rare wildlife in this unforgettable adventure.</p>
+            <p>Price: $2000</p>
+            <button class="book-btn" onclick="openBookingForm('Exotic Wilderness Retreat')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Cultural Odyssey</h3>
+            <p>Immerse yourself in the rich tapestry of cultures as you journey through historic landmarks and vibrant cities.</p>
+            <p>Price: $2500</p>
+            <button class="book-btn" onclick="openBookingForm('Cultural Odyssey')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>Tropical Paradise Getaway</h3>
+            <p>Relax on sun-kissed beaches, snorkel in crystal-clear waters, and indulge in island luxury.</p>
+            <p>Price: $1800</p>
+            <button class="book-btn" onclick="openBookingForm('Tropical Paradise Getaway')">Book Now</button>
+        </div>
+        <div class="package-card">
+            <h3>City Explorer</h3>
+            <p>Experience the hustle and bustle of metropolitan life, from iconic landmarks to hidden gems.</p>
+            <p>Price: $1500</p>
+            <button class="book-btn" onclick="openBookingForm('City Explorer')">Book Now</button>
+        </div>
+        <div class="package-description">
+            <p>Ready to book your adventure? Explore our full range of packages and start your journey today!</p>
+            <button id="open-booking-btn" class="btn" onclick="redirectToPackagesPage()">Book Now</button>
+        </div>
+        <button id="view-more-packages-btn" class="btn" onclick="redirectToPackagesPage()">View More Packages</button>
+    </section>
+    
+    
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Contact us: info@adventureseekers.com</p>
+            <p>Follow us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
